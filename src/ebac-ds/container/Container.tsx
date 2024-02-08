@@ -1,3 +1,5 @@
+import { ContainerProps } from "../types/Container";
+
 const Container = ({
   margin,
   marginHorizontal,
@@ -17,7 +19,7 @@ const Container = ({
   display,
   justifyContent,
   ...props
-}) => {
+}: ContainerProps) => {
   const mhorizontal = marginHorizontal ? `mh${marginHorizontal}` : "";
   const mvertical = marginVertical ? `mv${marginVertical}` : "";
   const mleft = marginLeft ? `ml${marginLeft}` : "";

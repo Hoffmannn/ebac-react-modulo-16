@@ -1,4 +1,5 @@
 import React from "react";
+import { CardProps } from "../types/Card";
 function Card({
   margin,
   marginHorizontal,
@@ -20,7 +21,7 @@ function Card({
   backgroundColor,
   fixed,
   ...props
-}) {
+}: CardProps) {
   const mhorizontal = marginHorizontal ? `mh${marginHorizontal}` : "mh2";
   const mvertical = marginVertical ? `mv${marginVertical}` : "";
   const mleft = marginLeft ? `ml${marginLeft}` : "";

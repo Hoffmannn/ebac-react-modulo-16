@@ -1,6 +1,5 @@
 import React from "react";
-
-// import { Container } from './styles';
+import { BoxProps } from "../types/Box";
 
 function Box({
   margin,
@@ -23,7 +22,7 @@ function Box({
   backgroundColor,
   fixed,
   ...props
-}) {
+}: BoxProps) {
   const mhorizontal = marginHorizontal ? `mh${marginHorizontal}` : "";
   const mvertical = marginVertical ? `mv${marginVertical}` : "";
   const mleft = marginLeft ? `ml${marginLeft}` : "";

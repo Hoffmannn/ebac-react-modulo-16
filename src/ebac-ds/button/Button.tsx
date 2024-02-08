@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.css";
+import { ButtonProps } from "../types/Button";
 
 function Button({
   label,
@@ -13,7 +14,7 @@ function Button({
   p,
   isDisabled,
   ...props
-}) {
+}: ButtonProps) {
   const mhorizontal = mh ? `mh${mh}` : "";
   const mvertical = mv ? `mv${mv}` : "";
   const mleft = ml ? `ml${ml}` : "";
